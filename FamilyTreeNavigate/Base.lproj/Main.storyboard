@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Switching View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SwitchingViewController" customModule="FamilyTreeNavigate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvq-iz-zUr">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Next Family Member" id="TlA-Ww-scO">
+                                        <connections>
+                                            <action selector="switchViewsWithSender:" destination="BYZ-38-t0r" id="gCv-l1-Rwb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cvq-iz-zUr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Abm-0E-Too"/>
+                            <constraint firstItem="cvq-iz-zUr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bLs-rg-6Sv"/>
+                            <constraint firstItem="cvq-iz-zUr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="o1K-l6-XhX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+        </scene>
+        <!--Dad View Controller-->
+        <scene sceneID="9gs-4a-nQU">
+            <objects>
+                <viewController storyboardIdentifier="dad" id="qqV-eP-Tiz" customClass="DadViewController" customModule="FamilyTreeNavigate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wga-Rc-Voa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5C-gg-0rM">
+                                <rect key="frame" x="37.5" y="109" width="300" height="449"/>
+                                <state key="normal" image="dad"/>
+                                <connections>
+                                    <action selector="dadButtonPressedWithSender:" destination="qqV-eP-Tiz" eventType="touchUpInside" id="bsQ-sG-eta"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v5C-gg-0rM" firstAttribute="centerX" secondItem="wga-Rc-Voa" secondAttribute="centerX" id="pTe-hd-O6Z"/>
+                            <constraint firstItem="v5C-gg-0rM" firstAttribute="centerY" secondItem="wga-Rc-Voa" secondAttribute="centerY" id="u0f-75-4l5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c2q-BH-P3e"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4NF-D6-Wpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.79999999999995" y="25.637181409295355"/>
+        </scene>
+        <!--Mom View Controller-->
+        <scene sceneID="uLw-Ak-8ia">
+            <objects>
+                <viewController storyboardIdentifier="mom" id="6kk-la-cSG" customClass="MomViewController" customModule="FamilyTreeNavigate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLh-C1-Hq8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnb-VN-9jc">
+                                <rect key="frame" x="-120" y="146" width="615" height="375"/>
+                                <state key="normal" title="Button" image="mom"/>
+                                <connections>
+                                    <action selector="momButtonPressedWithSender:" destination="6kk-la-cSG" eventType="touchUpInside" id="HNG-qO-SlR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qnb-VN-9jc" firstAttribute="centerX" secondItem="GLh-C1-Hq8" secondAttribute="centerX" id="Xbc-dx-SRB"/>
+                            <constraint firstItem="qnb-VN-9jc" firstAttribute="centerY" secondItem="GLh-C1-Hq8" secondAttribute="centerY" id="viq-oQ-xNC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IHE-Wi-gjW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEq-WY-Asn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1573.5999999999999" y="25.637181409295355"/>
+        </scene>
+        <!--Aaron View Controller-->
+        <scene sceneID="6Jn-Fl-hZ2">
+            <objects>
+                <viewController storyboardIdentifier="aaron" id="UK9-Bn-QCe" customClass="AaronViewController" customModule="FamilyTreeNavigate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aTh-wH-qAf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ei-SH-vc7">
+                                <rect key="frame" x="-68.5" y="77.5" width="512" height="512"/>
+                                <state key="normal" image="aaron"/>
+                                <connections>
+                                    <action selector="aaronButtonPressedWithSender:" destination="UK9-Bn-QCe" eventType="touchUpInside" id="oZt-Dh-gxI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Ei-SH-vc7" firstAttribute="centerX" secondItem="aTh-wH-qAf" secondAttribute="centerX" id="3re-4g-f8r"/>
+                            <constraint firstItem="9Ei-SH-vc7" firstAttribute="centerX" secondItem="aTh-wH-qAf" secondAttribute="centerX" id="DXv-Cb-Vmf"/>
+                            <constraint firstItem="9Ei-SH-vc7" firstAttribute="centerY" secondItem="aTh-wH-qAf" secondAttribute="centerY" id="Mf2-jq-DHu"/>
+                            <constraint firstItem="9Ei-SH-vc7" firstAttribute="centerY" secondItem="aTh-wH-qAf" secondAttribute="centerY" id="Wz5-KP-bdd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lJw-Ol-IOf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2w-pR-p8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271" y="31"/>
+        </scene>
+        <!--Colin View Controller-->
+        <scene sceneID="9Df-dk-rWo">
+            <objects>
+                <viewController storyboardIdentifier="colin" id="bit-5l-FS5" customClass="ColinViewController" customModule="FamilyTreeNavigate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UNI-GX-pQb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mam-3s-OtZ">
+                                <rect key="frame" x="75" y="221" width="225" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="colin2"/>
+                                <connections>
+                                    <action selector="colinButtonPressedWithSender:" destination="bit-5l-FS5" eventType="touchUpInside" id="rcq-ts-ceX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hH2-ak-QQZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygf-ty-Rcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2965.5999999999999" y="29.23538230884558"/>
+        </scene>
+        <!--Sean View Controller-->
+        <scene sceneID="DQv-5b-8H6">
+            <objects>
+                <viewController storyboardIdentifier="sean" id="UKA-wQ-eBm" customClass="SeanViewController" customModule="FamilyTreeNavigate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3yC-bK-BdW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmf-wg-fV5">
+                                <rect key="frame" x="-89.5" y="193" width="554" height="281"/>
+                                <state key="normal" title="Button" image="sean"/>
+                                <connections>
+                                    <action selector="seanButtonPressedWithSender:" destination="UKA-wQ-eBm" eventType="touchUpInside" id="nFB-3k-Xor"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hmf-wg-fV5" firstAttribute="centerX" secondItem="3yC-bK-BdW" secondAttribute="centerX" id="kUV-ep-nkz"/>
+                            <constraint firstItem="hmf-wg-fV5" firstAttribute="centerY" secondItem="3yC-bK-BdW" secondAttribute="centerY" id="x4S-a5-LUT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Zw-WB-ZNC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yzk-DY-5O0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3628" y="29"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aaron" width="512" height="512"/>
+        <image name="colin2" width="225" height="225"/>
+        <image name="dad" width="300" height="449.25"/>
+        <image name="mom" width="561.75" height="375"/>
+        <image name="sean" width="500" height="281"/>
+    </resources>
+</document>
