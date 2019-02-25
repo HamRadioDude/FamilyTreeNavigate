@@ -25,7 +25,12 @@ class SwitchingViewController: UIViewController {
             dadViewController = storyboard?.instantiateViewController(withIdentifier: "dad") as? DadViewController
             dadViewController.view.frame = view.frame
             switchViewController(from: nil, to: dadViewController) // helper method
-            
+       
+            aaronViewController = storyboard?.instantiateViewController(withIdentifier: "aaron") as? AaronViewController
+            momViewController = storyboard?.instantiateViewController(withIdentifier: "mom") as? MomViewController
+            colinViewController = storyboard?.instantiateViewController(withIdentifier: "colin") as? ColinViewController
+            seanViewController = storyboard?.instantiateViewController(withIdentifier: "sean") as? SeanViewController
+
             
             
         }

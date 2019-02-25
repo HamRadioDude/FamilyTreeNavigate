@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ei-SH-vc7">
-                                <rect key="frame" x="-68.5" y="77.5" width="512" height="512"/>
+                                <rect key="frame" x="-69" y="77" width="512" height="512"/>
                                 <state key="normal" image="aaron"/>
                                 <connections>
                                     <action selector="aaronButtonPressedWithSender:" destination="UK9-Bn-QCe" eventType="touchUpInside" id="oZt-Dh-gxI"/>
@@ -136,9 +136,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mam-3s-OtZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mam-3s-OtZ">
                                 <rect key="frame" x="75" y="221" width="225" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="colin2"/>
                                 <connections>
                                     <action selector="colinButtonPressedWithSender:" destination="bit-5l-FS5" eventType="touchUpInside" id="rcq-ts-ceX"/>
@@ -146,6 +145,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mam-3s-OtZ" firstAttribute="centerY" secondItem="UNI-GX-pQb" secondAttribute="centerY" id="FFY-lA-QzI"/>
+                            <constraint firstItem="Mam-3s-OtZ" firstAttribute="centerX" secondItem="UNI-GX-pQb" secondAttribute="centerX" id="wYh-XU-qxI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hH2-ak-QQZ"/>
                     </view>
                 </viewController>
